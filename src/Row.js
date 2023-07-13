@@ -47,7 +47,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
     <div className="row">
       <h2>{title}</h2>
       <div className="row_posters">
-        {movies.map((movie) => (
+        {movies && movies.map((movie) => (
           <img
             key={movie.id}
             onClick={() => handleClick(movie)}
